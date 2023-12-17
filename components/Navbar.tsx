@@ -26,7 +26,7 @@ const Navbar = () => {
           type="button"
           title="Login"
           icon="/user.svg"
-          variant="bg-green-90 px-8 py-4 text-white transition-all hover:bg-black"
+          variant="bg-black px-8 py-4 text-white transition-all hover:bg-black"
         />
       </div>
 
