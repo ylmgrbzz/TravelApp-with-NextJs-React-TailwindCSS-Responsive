@@ -5,7 +5,6 @@ type ButtonProps = {
   title: string;
   icon?: string;
   variant: string;
-
   full?: boolean;
 };
 

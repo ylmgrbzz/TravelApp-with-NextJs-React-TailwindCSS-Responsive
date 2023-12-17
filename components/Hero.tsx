@@ -1,14 +1,10 @@
 import Image from "next/image";
-import React from "react";
 import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section
-      className="max-container     px-6 lg:px-20 3xl:px-0
- flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row"
-    >
-      <div className="hero-map" />
+    <section className="max-container px-6 lg:px-20 3xl:px-0 flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
+      <div className="absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-60" />
 
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
         <Image
@@ -19,7 +15,7 @@ const Hero = () => {
           className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
         />
         <h1 className="bold-52 lg:bold-88">Putuk Truno Camp Area</h1>
-        <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
+        <p className="regular-16 mt-6 text-black-30 xl:max-w-[520px]">
           We want to be on each of your journeys seeking the satisfaction of
           seeing the incorruptible beauty of nature. We can help you on an
           adventure around the world in just one app
@@ -52,38 +48,35 @@ const Hero = () => {
           <Button
             type="button"
             title="Download App"
-            variant="border-green-50 bg-green-50 px-8 py-5 text-white"
+            variant="order-green-50 bg-black px-8 py-5 text-white"
           />
           <Button
             type="button"
             title="How we work?"
             icon="/play.svg"
-            variant="border-white bg-white px-8 py-3 text-gray-90"
+            variant="border-black bg-white px-8 py-3 text-black-90"
           />
         </div>
       </div>
 
-      <div className="relative  flex flex-1 items-start">
-        <div
-          className="relative bg-black z-20 flex w-[268px] flex-col gap-8
-         rounded-3xl bg-green-90 px-7 py-8"
-        >
-          <div className="flex  flex-col">
+      <div className="relative flex flex-1 items-start">
+        <div className="relative z-20 flex w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8">
+          <div className="flex flex-col">
             <div className="flexBetween">
-              <p className="regular-16  text-white">Location</p>
+              <p className="regular-16 text-black-20">Location</p>
               <Image src="/close.svg" alt="close" width={24} height={24} />
             </div>
-            <p className="bold-20 text-white">Aguas Calientes</p>
+            <p className="bold-20 text-black">Aguas Calientes</p>
           </div>
 
           <div className="flexBetween">
             <div className="flex flex-col">
-              <p className="regular-16 block  text-white">Distance</p>
-              <p className="bold-20 text-white">173.28 mi</p>
+              <p className="regular-16 block text-black-20">Distance</p>
+              <p className="bold-20 text-black">173.28 mi</p>
             </div>
             <div className="flex flex-col">
-              <p className="regular-16 block  text-white">Elevation</p>
-              <p className="bold-20  text-white text-l">2.040 km</p>
+              <p className="regular-16 block text-black-20">Elevation</p>
+              <p className="bold-20 text-black">2.040 km</p>
             </div>
           </div>
         </div>
